@@ -59,7 +59,7 @@ type Config struct {
 	SourceIPv4               bool                       `toml:"ipv4_servers"`
 	SourceIPv6               bool                       `toml:"ipv6_servers"`
 	MaxClients               uint32                     `toml:"max_clients"`
-	FallbackResolver         string                     `toml:"fallback_resolver"`
+	FallbackResolver         []string                   `toml:"fallback_resolvers"`
 	IgnoreSystemDNS          bool                       `toml:"ignore_system_dns"`
 	AllWeeklyRanges          map[string]WeeklyRangesStr `toml:"schedules"`
 	LogMaxSize               int                        `toml:"log_files_max_size"`
